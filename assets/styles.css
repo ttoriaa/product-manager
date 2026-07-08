@@ -332,6 +332,77 @@ th {
   margin-top: 0;
 }
 
+.template h3,
+.deliverables h3,
+.notes h3 {
+  margin: 16px 0 10px;
+  font-size: 18px;
+}
+
+.process-flow {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.flow-step {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.flow-arrow {
+  color: var(--brand-dark);
+  font-weight: 800;
+}
+
+.architecture-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.arch-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  padding: 12px;
+}
+
+.arch-card h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.arch-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.checklist-box {
+  margin-top: 12px;
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px;
+}
+
+.checklist-box h3 {
+  margin-top: 0;
+}
+
+.checklist-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
 pre {
   margin: 0;
   overflow-x: auto;
@@ -356,6 +427,10 @@ code {
   }
 
   .radar-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .architecture-grid {
     grid-template-columns: 1fr;
   }
 
