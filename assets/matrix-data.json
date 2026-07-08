@@ -1,0 +1,36 @@
+{
+  "version": "2026Q3",
+  "updatedAt": "2026-07-08",
+  "note": "Strategic benchmarking dataset for KKL/GKL/MKL discussion. Price bands are planning ranges.",
+  "rows": [
+    { "brand": "BMW", "tier": "KKL", "model": "1 Series", "priceBand": "EUR 32k-45k", "power": "ICE", "region": "Europe / China" },
+    { "brand": "BMW", "tier": "KKL", "model": "X1", "priceBand": "EUR 40k-55k", "power": "ICE", "region": "Europe / China / Global" },
+    { "brand": "BMW", "tier": "KKL", "model": "iX1", "priceBand": "EUR 48k-62k", "power": "BEV", "region": "Europe / China" },
+    { "brand": "BMW", "tier": "GKL", "model": "3 Series", "priceBand": "EUR 45k-65k", "power": "ICE", "region": "Europe / China / US" },
+    { "brand": "BMW", "tier": "GKL", "model": "5 Series", "priceBand": "EUR 60k-85k", "power": "HEV/PHEV", "region": "Europe / China / US" },
+    { "brand": "BMW", "tier": "GKL", "model": "i5", "priceBand": "EUR 72k-95k", "power": "BEV", "region": "Europe / China / US" },
+    { "brand": "BMW", "tier": "MKL", "model": "7 Series", "priceBand": "EUR 100k-160k", "power": "HEV/PHEV", "region": "Europe / China / US" },
+    { "brand": "BMW", "tier": "MKL", "model": "i7", "priceBand": "EUR 120k-190k", "power": "BEV", "region": "Europe / China / US" },
+    { "brand": "BMW", "tier": "MKL", "model": "X7", "priceBand": "EUR 105k-170k", "power": "ICE", "region": "US / Europe / China" },
+
+    { "brand": "Mercedes-Benz", "tier": "KKL", "model": "A-Class", "priceBand": "EUR 33k-48k", "power": "ICE", "region": "Europe / China" },
+    { "brand": "Mercedes-Benz", "tier": "KKL", "model": "GLA", "priceBand": "EUR 42k-58k", "power": "ICE", "region": "Europe / China / Global" },
+    { "brand": "Mercedes-Benz", "tier": "KKL", "model": "EQA", "priceBand": "EUR 52k-68k", "power": "BEV", "region": "Europe / China" },
+    { "brand": "Mercedes-Benz", "tier": "GKL", "model": "C-Class", "priceBand": "EUR 48k-70k", "power": "HEV/PHEV", "region": "Europe / China / US" },
+    { "brand": "Mercedes-Benz", "tier": "GKL", "model": "E-Class", "priceBand": "EUR 62k-92k", "power": "HEV/PHEV", "region": "Europe / China / US" },
+    { "brand": "Mercedes-Benz", "tier": "GKL", "model": "EQE", "priceBand": "EUR 75k-105k", "power": "BEV", "region": "Europe / China / US" },
+    { "brand": "Mercedes-Benz", "tier": "MKL", "model": "S-Class", "priceBand": "EUR 120k-220k", "power": "HEV/PHEV", "region": "Europe / China / US" },
+    { "brand": "Mercedes-Benz", "tier": "MKL", "model": "EQS", "priceBand": "EUR 115k-210k", "power": "BEV", "region": "Europe / China / US" },
+    { "brand": "Mercedes-Benz", "tier": "MKL", "model": "Maybach S-Class", "priceBand": "EUR 190k-350k", "power": "ICE", "region": "China / Middle East / Europe" },
+
+    { "brand": "Geely", "tier": "KKL", "model": "Emgrand", "priceBand": "CNY 70k-110k", "power": "ICE", "region": "China / Emerging Markets" },
+    { "brand": "Geely", "tier": "KKL", "model": "Coolray", "priceBand": "CNY 90k-130k", "power": "ICE", "region": "China / SEA / Middle East" },
+    { "brand": "Geely", "tier": "KKL", "model": "Geely EX2", "priceBand": "CNY 80k-130k", "power": "BEV", "region": "China / Europe" },
+    { "brand": "Geely", "tier": "GKL", "model": "Xingrui", "priceBand": "CNY 110k-160k", "power": "HEV/PHEV", "region": "China" },
+    { "brand": "Geely", "tier": "GKL", "model": "Monjaro", "priceBand": "CNY 140k-220k", "power": "HEV/PHEV", "region": "China / Europe" },
+    { "brand": "Geely", "tier": "GKL", "model": "Starray EM-i", "priceBand": "CNY 130k-200k", "power": "HEV/PHEV", "region": "China / Europe" },
+    { "brand": "Geely", "tier": "MKL", "model": "Zeekr 001", "priceBand": "CNY 269k-370k", "power": "BEV", "region": "China / Europe" },
+    { "brand": "Geely", "tier": "MKL", "model": "Zeekr 009", "priceBand": "CNY 439k-589k", "power": "BEV", "region": "China / Global" },
+    { "brand": "Geely", "tier": "MKL", "model": "Zeekr 7X", "priceBand": "CNY 239k-320k", "power": "BEV", "region": "China / Europe" }
+  ]
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>三家产品矩阵 | KKL GKL MKL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="sub-header">
+      <a href="./index.html" class="back-link">← 返回首页</a>
+      <h1>三家产品矩阵表（按 KKL / GKL / MKL 分列）</h1>
+      <p>说明：以下是战略分析口径矩阵，用于竞品与产品规划。实际上市车型与配置需按区域和时间校验。</p>
+    </header>
+
+    <section class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>品牌</th>
+            <th>KKL（紧凑级）</th>
+            <th>GKL（中高级）</th>
+            <th>MKL（豪华旗舰级）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>BMW</strong></td>
+            <td>
+              <div>代表车系：1系 / 2系、X1 / X2</div>
+              <div>典型用户：年轻家庭、首购升级</div>
+              <div>核心价值：豪华入门、操控标签、城市智能体验</div>
+            </td>
+            <td>
+              <div>代表车系：3系 / 4系 / 5系、X3 / X5</div>
+              <div>典型用户：家庭主力、商务兼顾</div>
+              <div>核心价值：品牌与性能平衡、利润主力区间</div>
+            </td>
+            <td>
+              <div>代表车系：7系 / 8系、X7、XM</div>
+              <div>典型用户：高净值、行政与收藏用户</div>
+              <div>核心价值：旗舰技术首发、品牌形象锚点</div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>Mercedes-Benz</strong></td>
+            <td>
+              <div>代表车系：A级 / CLA、GLA</div>
+              <div>典型用户：豪华品牌入门用户</div>
+              <div>核心价值：设计感和品牌认知入口</div>
+            </td>
+            <td>
+              <div>代表车系：C级 / E级、GLC / GLE</div>
+              <div>典型用户：家庭和商务主流客群</div>
+              <div>核心价值：舒适豪华、产品梯度清晰、盈利核心</div>
+            </td>
+            <td>
+              <div>代表车系：S级、Maybach、AMG GT、G-Class、GLS</div>
+              <div>典型用户：超高净值和性能用户</div>
+              <div>核心价值：高利润、高品牌势能、顶级豪华体验</div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><strong>Geely（含集团协同视角）</strong></td>
+            <td>
+              <div>代表车系：帝豪、缤越、博越入门序列</div>
+              <div>典型用户：主流家庭、价格敏感用户</div>
+              <div>核心价值：规模化、智能配置普及、油电双线覆盖</div>
+            </td>
+            <td>
+              <div>代表车系：星瑞、星越L、部分领克主力序列</div>
+              <div>典型用户：价值升级型家庭与新中产</div>
+              <div>核心价值：技术配置上探、品牌向上承接层</div>
+            </td>
+            <td>
+              <div>代表车系：极氪高端序列（集团高端突破）</div>
+              <div>典型用户：高端新能源、科技导向用户</div>
+              <div>核心价值：新能源高端化、品牌溢价探索、全球化试水</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="notes">
+      <h2>如何用这张矩阵做产品策略</h2>
+      <ol>
+        <li>先锁定你的目标层级（KKL / GKL / MKL）与价格带。</li>
+        <li>再对标同层级竞品的“价值锚点”：品牌、智能、性能、补能、服务。</li>
+        <li>最后判断你是要“打穿单点”，还是“做全面平衡型产品”。</li>
+      </ol>
+    </section>
+
+    <section class="data-panel">
+      <h2>车型-价格带-动力-上市区域 数据表</h2>
+      <p class="hint">支持按品牌、级别（KKL/GKL/MKL）、动力一键筛选，并可导出当前筛选结果为 CSV。</p>
+      <p id="matrixMeta" class="hint"></p>
+
+      <div class="import-panel">
+        <h3>导入新季度 JSON</h3>
+        <p class="hint">上传包含 version、updatedAt、rows 的 JSON。系统将校验字段并显示错误明细。</p>
+        <div class="import-row">
+          <input id="matrixJsonInput" type="file" accept="application/json,.json" />
+          <button id="resetMatrixDataBtn" class="btn btn-secondary" type="button">恢复默认数据</button>
+        </div>
+        <div id="matrixValidation" class="validation-box"></div>
+      </div>
+
+      <div class="filter-row">
+        <label>
+          品牌
+          <select id="brandFilter">
+            <option value="ALL">全部</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Geely">Geely</option>
+          </select>
+        </label>
+
+        <label>
+          级别
+          <select id="tierFilter">
+            <option value="ALL">全部</option>
+            <option value="KKL">KKL</option>
+            <option value="GKL">GKL</option>
+            <option value="MKL">MKL</option>
+          </select>
+        </label>
+
+        <label>
+          动力
+          <select id="powerFilter">
+            <option value="ALL">全部</option>
+            <option value="ICE">ICE</option>
+            <option value="HEV/PHEV">HEV/PHEV</option>
+            <option value="BEV">BEV</option>
+          </select>
+        </label>
+
+        <button id="exportCsvBtn" class="btn btn-primary" type="button">导出 CSV</button>
+      </div>
+
+      <div class="table-wrap table-wrap-tight">
+        <table>
+          <thead>
+            <tr>
+              <th>品牌</th>
+              <th>级别</th>
+              <th>车型</th>
+              <th>价格带（战略口径）</th>
+              <th>动力</th>
+              <th>上市区域</th>
+            </tr>
+          </thead>
+          <tbody id="modelTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="./assets/matrix.js"></script>
+</body>
+</html>

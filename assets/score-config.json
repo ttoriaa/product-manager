@@ -1,0 +1,22 @@
+{
+  "version": "2026Q3",
+  "updatedAt": "2026-07-08",
+  "labels": ["产品力", "市场力", "盈利力"],
+  "datasets": [
+    {
+      "name": "BMW",
+      "color": "#20639b",
+      "values": [8.5, 8.2, 8.4]
+    },
+    {
+      "name": "Mercedes-Benz",
+      "color": "#b43f3f",
+      "values": [8.3, 8.6, 8.8]
+    },
+    {
+      "name": "Geely",
+      "color": "#2d7f5e",
+      "values": [8.0, 8.1, 7.6]
+    }
+  ]
+}
